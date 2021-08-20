@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for循环的练习</title>
+    <script>
+        /*
+        //打印1-100之间所有奇数之和
+
+        // 创建一个变量用来保存奇数之和
+        var sum = 0;
+
+        for(var i=1;i<=100;i++){
+            if(i%2!=0){
+                sum += i;
+            }
+        }
+
+        console.log("奇数之和为:"+sum);
+        */
+
+        //打印1-100之间所有7的倍数的个数及总和
+        // 定义一个变量来保存总和
+        var sum = 0;
+        // 定义一个计数器，来保存数量
+        var count = 0;
+
+        // 打印1-100之间所有的数
+        for(var i=1;i<=100;i++){
+            if(i%7 == 0){
+                sum += i;
+                count++;
+            }
+        }
+
+        console.log("总和为:"+sum);
+        console.log("总数量为:"+count);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

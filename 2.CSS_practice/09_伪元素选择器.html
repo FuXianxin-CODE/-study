@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+    <style>
+        /* 
+            伪元素，表示页面中一些特殊的并不存在的真实元素（特殊的位置）
+                伪元素使用::开头
+
+                ::first-letter 表示第一个字母
+                ::first-line 表示第一行
+                ::selection 表示选中的内容
+                ::before 元素的开始
+                ::after 元素的最后
+                    -before和after必须结合content属性来使用
+
+        */
+        p::first-letter{
+            font-size: 30px;
+        }
+
+        p::first-line{
+            background-color: lightpink;
+        }
+
+        p::selection{
+            background-color: lightseagreen;
+        }
+
+        div::before{
+            content:'♫' ;
+        }
+
+        div::after{
+            content:'♫';
+        }
+    </style>
+</head>
+<body>
+    <div>Hello World</div>
+    <p>China is likely to ramp up fiscal support while keeping monetary policy stable over the rest of the year, with the country's full-year economic growth expected to reach 8.5 percent or more, economists said on Tuesday.</p>
+</body>
+</html>

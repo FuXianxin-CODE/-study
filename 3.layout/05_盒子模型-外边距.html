@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型-外边距</title>
+    <style>
+        .box1{
+            background-color: pink;
+            border: red 10px solid;
+            margin: 100px;
+        }
+
+        .box2{
+            background-color:#bfa;
+            border: black 10px solid;
+            margin: 150px;
+        }
+
+        .box3{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            border: blueviolet 10px solid;
+            margin: 80px;
+            margin:200px 20px 10px 10px
+        }
+
+        /* 
+            外边距(margin)
+                -外边距不会影响盒子可见框的大小
+                -但是外边距会影响盒子的位置
+                -一共有四个方向的外边距：
+                margin-top
+                    -上外边距，设置一个正值，元素会向下移动
+                margin-right
+                    -默认情况下设置margin-right不会产生任何效果
+                margin-bottom
+                    -下外边距,设置一个正值，其下边的元素会向下移动
+                margin-left
+                    -左外边距，设置一个正值，元素会向右移动
+                
+                -margin也可以设置负值，如果是负值则元素会向相反的方向移动
+
+                -元素在页面中是按照自左向右的顺序排列的，所以默认情况下如果我们设置的左和上边距则会移动元素自身
+                而设置下和右外边距会移动其它元素
+
+                -margin的简写属性
+                margin可以同时设置四个方向的外边距，用法和padding一样
+                
+                -margin会影响到盒子实际占用空间
+        */
+    </style>
+</head>
+<body>
+    <span class="box1">你好呀，这个世界</span>
+    <span class="box2">大家好，我是snow</span>
+    <br><br>
+    <br>
+    <div class="box3"></div>
+</body>
+</html>

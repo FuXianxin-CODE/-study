@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while练习</title>
+    <script>
+        // 假如投资的年利率为5%，试求从1000块增长到5000块，至少需要多少年
+
+        // 定义一个变量表示当前的钱数
+        var money = 1000;
+
+        // 定义一个计数器
+        var count = 0;
+
+        while(money<=5000){
+            money *= 1.05;
+            count++;
+        }
+
+        console.log(money);
+        console.log("一共需要"+count+"年");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
